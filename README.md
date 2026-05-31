@@ -76,15 +76,15 @@
 
 Создать объектный файл :
 
-nasm -f elf64 -o textinput.o Calculator.asm
+    nasm -f elf64 -o textinput.o Calculator.asm
 
 Создать исполняемый файл :
 
-ld -o textinput textinput.o
+    ld -o textinput textinput.o
 
 Запуск:
 
-./textinput 1arg 2arg 3arg
+    ./textinput 1arg 2arg 3arg
 
 1arg = первое число
 2arg = второе число
