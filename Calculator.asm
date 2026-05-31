@@ -1,6 +1,6 @@
 section .data
 
-    remainder_storage db 0,0,0,0,0,0,0,0
+    remainder_storage db 0,0,0,0,0,0,0,0,10
     remainder_storage_len equ $ - remainder_storage
 
     error_operation db 'Ошибка:Аргументе Операций можно выбрать только +,-,*,/', 10
@@ -107,7 +107,7 @@ _start:
 .trasform_digits_in_text:
 
     mov rax, rdi
-
+    dec rcx
     call .handler_trasform_digits_in_text
     ret
 
